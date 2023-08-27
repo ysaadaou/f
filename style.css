@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    transition: 2s ease;
+    color: #2E1F14;
+    overflow: hidden;
+}
+
+:root {
+    --nav-bg-color:#96C291;
+    --nav-text-color:#2E1F14;
+    --menu-content-color: #E57C23;
+    --text-color:#2E1F14;
+    --section-bg-color:#FFDBAA;
+
+    --bg-beverages: rgba(255,255,255,0.5);
+    --bg-breakFast: rgba(255,255,255,0.5);
+    --bg-bakery: rgba(255,255,255,0.5);
+    --bg-iceCreams: rgba(255,255,225,0.5);
+
+}
+
+header {
+    position: fixed;
+    width: 100%;
+/*     background:var(--nav-bg-color); */
+    z-index: 100;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom: 3px solid #2E1F14;
+    border-bottom-right-radius: 15px;
+}
+
+
+.navbar a{
+    color: var(--nav-text-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 0; 
+}
+
+.scan {
+    font-size: 3rem;
+    padding-right: 0.3rem;
+}
+section {
+    height: 100vh;
+    background-color: var(--section-bg-color);
+    padding-top: 9rem;
+}
+
+.menu img {
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: 90;
+}
+
+
+
+.menu-container {
+    display: flex;
+    align-items: center;
+}
+
+.menu-content {
+    background-color: var(--menu-content-color);
+/*    color: var(--text-color); */
+    width: 100%;
+    height: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+    display: flex;
+    align-items: center; 
+}
+
+.bg-breakFast {
+    background-color: var(--bg-breakFast);
+}
+
+.bg-bakery {
+    background-color: var(--bg-bakery);
+}
+
+.bg-beverages {
+    background-color: var(--bg-beverages);
+}
+
+
+.bg-iceCreams {
+    background-color: var(--bg-iceCreams);
+}
+
+.menu-container i {
+}
+
+.border-tr {
+    border-top-right-radius:40px ;
+}
+
+.border-tl {
+    border-bottom-left-radius:40px ;
+}
+.menu-content h1 {
+    font-size: 1.8rem;
+    padding-top: 0.5rem;
+    font-weight: 900;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.breakFast-container h1{
+    padding-left: 6rem;
+
+}
+
+.bakery-container h1{
+    padding-left: 6rem;
+
+}
+
+.beverages-container {
+    flex-direction: row-reverse;
+}
+
+
+.bakery-container {
+
+}
+
+.iceCreams-container {
+    flex-direction: row-reverse;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 0.5rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+.iceCreamsImg {
+    right: 10px;
+}
+
+.beveragesImg {
+    right: 10px;
+}
+
+.breakFastImg {
+    left: 10px;
+}
+
+.bakeryImg {
+    left: 10px;
+}
+
+
+
+#beverages {
+    background-color:#865439;
+}
+
+#iceCreams {
+    background-color: #40F8FF;
+}
+
+#breakFast {
+    background-color:#FFC436;
+}
+
+#bakery {
+
+    background-color:#FDE49C;
+}
+
+
+/*Beverages menu styles */
+
+
+.general-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+
+.menu-item {
+    width: 33%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border: 2px solid #2E1F14;
+    margin-top: 1.5rem;
+}
+
+
+.menu-item-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+#beverages {
+
+    padding-top: 4rem;
+}
+
+#breakFast {
+
+    padding-top: 4rem;
+}
+#iceCreams {
+
+    padding-top: 4rem;
+}
+#bakery {
+
+    padding-top: 4rem;
+}
+.add {
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.remove {
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item .btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0;
+
+    background-color: rgba(0, 0, 0, 0.1);
+
+
+}
