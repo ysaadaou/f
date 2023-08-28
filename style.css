@@ -6,7 +6,6 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    transition: 2s ease;
     color: #2E1F14;
     overflow: hidden;
 }
@@ -18,19 +17,16 @@
     --text-color:#2E1F14;
     --section-bg-color:#FFDBAA;
 
-    --bg-beverages: rgba(255,255,255,0.5);
-    --bg-breakFast: rgba(255,255,255,0.5);
-    --bg-bakery: rgba(255,255,255,0.5);
-    --bg-iceCreams: rgba(255,255,225,0.5);
+    --bg-beverages: #865439;
+    --bg-breakFast: #FFC436;
+    --bg-bakery:#FDE49C;
+    --bg-iceCreams: #40F8FF;
 
 }
 
 header {
-    position: fixed;
     width: 100%;
 /*     background:var(--nav-bg-color); */
-    z-index: 100;
-
     background-color: rgba(0, 0, 0, 0.3);
     border-bottom: 3px solid #2E1F14;
     border-bottom-right-radius: 15px;
@@ -58,7 +54,6 @@ header {
 section {
     height: 100vh;
     background-color: var(--section-bg-color);
-    padding-top: 9rem;
 }
 
 .menu img {
@@ -181,20 +176,19 @@ section {
 
 
 #beverages {
-    background-color:#865439;
+    background-color:var(--bg-beverages);
 }
 
 #iceCreams {
-    background-color: #40F8FF;
+    background-color: var(--bg-iceCreams);
 }
 
 #breakFast {
-    background-color:#FFC436;
+    background-color:var(--bg-breakFast);
 }
 
 #bakery {
-
-    background-color:#FDE49C;
+    background-color:var(--bg-bakery);
 }
 
 
@@ -229,8 +223,7 @@ section {
 }
 
 
-#beverages {
-
+/* #beverages {
     padding-top: 4rem;
 }
 
@@ -245,7 +238,7 @@ section {
 #bakery {
 
     padding-top: 4rem;
-}
+} */
 .add {
     border: none;
     outline: none;
@@ -278,3 +271,38 @@ section {
 
 
 }
+
+
+.search-menu-items {
+    width: 100%;
+    margin: 1.4rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2px; 
+    align-items: center;
+}
+
+
+.search-menu-items input {
+    width: 70%;
+    padding: 0.8rem;
+    border-radius: 30px;
+    border: 3px solid #2E1F14 ;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.search-menu-items .search-icon {
+    font-size: 2rem;
+}
+
+.category-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    padding: 0.3rem;
+}
+
+
+
