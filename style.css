@@ -212,7 +212,7 @@ section {
     align-items: center;
     border-radius: 25px;
     border: 2px solid #2E1F14;
-    margin-top: 1.5rem;
+    margin: 0.2rem 0;
 }
 
 
@@ -266,16 +266,13 @@ section {
     align-items: center;
     gap: 1.5rem;
     padding: 0;
-
     background-color: rgba(0, 0, 0, 0.1);
-
-
 }
 
 
 .search-menu-items {
     width: 100%;
-    margin: 1.4rem 0;
+    margin: 0.8rem 0;
     display: flex;
     justify-content: center;
     gap: 2px; 
@@ -285,7 +282,7 @@ section {
 
 .search-menu-items input {
     width: 70%;
-    padding: 0.8rem;
+    padding: 0.5rem;
     border-radius: 30px;
     border: 3px solid #2E1F14 ;
     font-size: 1.2rem;
@@ -305,4 +302,41 @@ section {
 }
 
 
+.category-navbar h1 {
+    color: black;
+}
+.category-navbar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.category-navbar i {
+    color: black;
+}
 
+
+.menu-item .quantity {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+
+/* navigation */
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.navigation button {
+    font-size: 3rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+.navigation button i {
+    color: black;
+}
