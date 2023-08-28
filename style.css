@@ -15,21 +15,25 @@
     --nav-text-color:#2E1F14;
     --menu-content-color: #E57C23;
     --text-color:#2E1F14;
-    --section-bg-color:#FFDBAA;
-
-    --bg-beverages: #865439;
+    --section-bg-color: aliceblue;
+/*     --bg-beverages: #865439;
     --bg-breakFast: #FFC436;
     --bg-bakery:#FDE49C;
-    --bg-iceCreams: #40F8FF;
+    --bg-iceCreams: #40F8FF; */
 
+    --bg-beverages: #FEE8B0;
+    --bg-breakFast:#FEE8B0;
+    --bg-bakery: #FEE8B0;
+    --bg-iceCreams: #FEE8B0;
 }
 
 header {
     width: 100%;
 /*     background:var(--nav-bg-color); */
-    background-color: rgba(0, 0, 0, 0.3);
-    border-bottom: 3px solid #2E1F14;
-    border-bottom-right-radius: 15px;
+/*     background-color:rgba(0,0,0,0.2); 
+    border: 2px solid #2E1F14;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px; */
 }
 
 
@@ -363,4 +367,5 @@ section {
 
 .checkout-order i {
     color: aliceblue;
+    font-size: 2rem;
 }
