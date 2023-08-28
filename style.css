@@ -329,8 +329,8 @@ section {
 }
 
 
-.navigation button {
-    font-size: 3rem;
+.navigation button, .navigation a {
+    font-size: 2.5rem;
     border: none;
     background: none;
     cursor: pointer;
@@ -339,4 +339,26 @@ section {
 
 .navigation button i {
     color: black;
+}
+
+span {
+    font-size: 1.5rem;
+    color:green;
+    font-weight: 800;
+}
+
+.checkout-order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.checkout-order i {
+    color: green;
+    font-size: 2rem;
+}
+
+
+.iceCreams-menu-header {
+    display: flex;
 }
